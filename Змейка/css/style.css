@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/Serpensgreen_545x545_crop_center.webp");
+  }
+
+  .field {
+    display: grid;
+    grid-template-columns: repeat(20, 27px);
+    grid-template-rows: repeat(20, 27px);
+    gap: 5px;
+    border: 5px solid #2001014b;
+    box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.5);
+    background-color: #2001014b;
+  }
+
+  .cell {
+    width: 27px;
+    height: 27px;
+    background-color: #250101cb;
+  }
+
+  .snake {
+    background-color: #2bb927;
+    border-radius: 40%;
+  }
+
+  .food {
+    background-color: rgb(255, 1, 1);
+    box-shadow: 0 0 10px 20px rgba(255, 0, 0, 0.5);
+    border-radius: 40%;
+  }
+  h1 {
+    color: #000000;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-shadow: 0 0 5px #fff;
+  }
+  button {
+    display: none;
+    background-color: rgba(255, 0, 0, 0.8);
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+  }
+  button:hover {
+    box-shadow: 0 0 10px 5px #f300004d;
+    scale: .98;
+  }
+  button:active {
+    box-shadow: 0 0 10px 5px #f300004d;
+    scale: .95;
+  }
